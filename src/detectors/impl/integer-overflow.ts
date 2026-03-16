@@ -47,7 +47,7 @@ export const integerOverflowDetector: Detector = {
   },
 };
 
-const OVERFLOW_OPS = new Set(['+', '-', '*']);
+const OVERFLOW_OPS = new Set(['+', '-', '*', '+=', '-=', '*=']);
 
 function collectArithmetic(
   fn: FunctionDefinition,
