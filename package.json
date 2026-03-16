@@ -1,0 +1,35 @@
+{
+  "name": "smart-contract-auditor",
+  "version": "0.1.0",
+  "description": "Automated smart contract security auditing tool for Solidity/EVM contracts",
+  "type": "module",
+  "main": "dist/index.js",
+  "bin": {
+    "sca": "dist/cli/index.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "lint": "eslint src",
+    "typecheck": "tsc --noEmit",
+    "dev": "tsx src/cli/index.ts"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "devDependencies": {
+    "@types/node": "^22.0.0",
+    "@typescript-eslint/eslint-plugin": "^8.0.0",
+    "@typescript-eslint/parser": "^8.0.0",
+    "eslint": "^9.0.0",
+    "prettier": "^3.0.0",
+    "tsx": "^4.0.0",
+    "typescript": "^5.0.0",
+    "vitest": "^2.0.0"
+  },
+  "dependencies": {
+    "@solidity-parser/parser": "^0.18.0",
+    "commander": "^12.0.0"
+  }
+}
