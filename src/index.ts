@@ -1,4 +1,4 @@
-// Public API surface for the smart-contract-auditor library.
+// Public API — use named subpath imports to avoid export conflicts
 export * from './parser/index.js';
-export * from './detectors/index.js';
-export * from './reporter/index.js';
+export type { Finding, FindingLocation, Severity, Detector } from './detectors/types.js';
+export type { AuditReport, AuditScope, ReportFormat } from './reporter/types.js';
